@@ -13,7 +13,6 @@ public class Student {
 	String name;
     String department;
     int age;
- @Autowired
     Address address;
     
     public Student(Integer studentId, String name, String department, int age, Address address) {
@@ -25,6 +24,14 @@ public class Student {
 		this.address = address;
 	}
 	
+		   public Address getAddress() {
+		return address;
+	}
+
+
+	public void setAddress(Address address) {
+		this.address = address;
+	}
 		   public Integer getStudentId() {
 		return studentId;
 	}
