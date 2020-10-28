@@ -37,12 +37,12 @@ package com.student.controller;
 			Student student=studentService.getStudentById(id);
 			return ResponseEntity.ok(student);
 		}
-		@GetMapping("/students-by-dept/{department}")
+		@GetMapping("/student-by-dept/{department}")
 		ResponseEntity<List<Student>> getStudentByDept(@PathVariable("dept")String department){
 			List<Student> students=studentService.getStudentsByDepartment(department);
 			return ResponseEntity.ok(students);
 		}
-		@GetMapping("/students-by-city/{city}")
+		@GetMapping("/student-by-city/{city}")
 		ResponseEntity<List<Student>> getStudentByCity(@PathVariable("city")String city){
 			List<Student> students=studentService.getStudentsByCity(city);
 			return ResponseEntity.ok(students);
